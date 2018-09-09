@@ -18,9 +18,9 @@ html {
 }
 
 body {
-	background: $white;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/000/106/564/non_2x/vector-seamless-geometric-blue-pattern.jpg");
   font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  color: #030107;
 }
 
 .container {
@@ -30,17 +30,32 @@ body {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
+div {
+    background: rgba(255, 255, 255, 0.4) 
+}
 
+table {
+    width: 100%;
+}
+
+th {
+    height: 50px;
+}
+
+table, th, td {
+   border: 1px solid black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Verdana", Geneva, sans-serif;;
+  color: #0099cc;
+  font-weight: bold;
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
 
   @include mobile {
-    line-height: 1.4;
+    line-height: 1.7;
   }
 }
 
@@ -69,11 +84,11 @@ p {
 }
 
 a {
-  color: $blue;
+  color: #000000;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: #23c4a9;
   }
 }
 
@@ -192,9 +207,9 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: #000000;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: "Verdana", Geneva, sans-serif;;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -213,7 +228,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: "Verdana", Geneva, sans-serif;;
   font-size: 18px;
 
   @include mobile {
@@ -256,7 +271,7 @@ nav {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
-    color: $gray;
+    color: #000000;
     font-size: 22px;
     font-style: italic;
   }
